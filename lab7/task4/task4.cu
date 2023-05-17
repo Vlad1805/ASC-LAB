@@ -50,7 +50,7 @@ int main(void) {
 	}
 	
 	// TODO 2: Allocate the device's arrays
-    int err = cudaMalloc(&device_array_a, N * sizeof(*device_array_a));
+    err = cudaMalloc(&device_array_a, N * sizeof(*device_array_a));
 	if (err != cudaSuccess || device_array_a == NULL)
 	{
 		perror("cudaMalloc(device_array_a) failed\n");
