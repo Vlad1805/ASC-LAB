@@ -1,0 +1,86 @@
+############# TASK 3 ###############
+
+==3682412== NVPROF is profiling process 3682412, command: ./task31
+SUM: 535968646
+MAX: 1023
+MIN: 0
+==3682412== Profiling application: ./task31
+==3682412== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  9.20992s        10  920.99ms  914.74ms  927.26ms  kernel_no_atomics(int*, int*)
+      API calls:   97.18%  9.21014s        10  921.01ms  914.75ms  927.28ms  cudaDeviceSynchronize
+                    2.74%  259.61ms         2  129.80ms  262.60us  259.35ms  cudaMallocManaged
+                    0.04%  3.4782ms         3  1.1594ms  1.1537ms  1.1649ms  cuDeviceTotalMem
+                    0.02%  1.9880ms        10  198.80us  83.947us  1.0449ms  cudaLaunch
+                    0.02%  1.6162ms       282  5.7310us     348ns  245.91us  cuDeviceGetAttribute
+                    0.00%  199.04us         1  199.04us  199.04us  199.04us  cudaFree
+                    0.00%  189.74us         3  63.246us  49.564us  85.509us  cuDeviceGetName
+                    0.00%  18.057us        10  1.8050us     890ns  2.9780us  cudaConfigureCall
+                    0.00%  12.816us        20     640ns     200ns  3.7890us  cudaSetupArgument
+                    0.00%  6.0850us         6  1.0140us     501ns  1.9650us  cuDeviceGet
+                    0.00%  4.6820us         3  1.5600us     408ns  2.8710us  cuDeviceGetCount
+
+==3682412== Unified Memory profiling result:
+Device "Tesla K40m (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+      13  318.15KB  4.0000KB  2.0000MB  4.039063MB  712.0320us  Host To Device
+      56  85.714KB  4.0000KB  0.9961MB  4.687500MB  787.8400us  Device To Host
+Total CPU Page faults: 28
+
+
+
+==3682412== NVPROF is profiling process 3682412, command: ./task32
+SUM: 535968646
+MAX: 1023
+MIN: 0
+==3682510== Profiling application: ./task32
+==3682510== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  4.0287ms        10  402.87us  402.53us  404.04us  kernel_partial_atomics(int*, int*)
+      API calls:   96.23%  287.52ms         2  143.76ms  273.04us  287.24ms  cudaMallocManaged
+                    1.37%  4.1008ms        10  410.08us  408.86us  414.27us  cudaDeviceSynchronize
+                    1.16%  3.4631ms         3  1.1544ms  1.1501ms  1.1605ms  cuDeviceTotalMem
+                    0.61%  1.8229ms        10  182.29us  82.060us  1.0609ms  cudaLaunch
+                    0.52%  1.5661ms       282  5.5530us     351ns  229.53us  cuDeviceGetAttribute
+                    0.05%  154.66us         3  51.553us  48.609us  56.562us  cuDeviceGetName
+                    0.04%  114.22us         1  114.22us  114.22us  114.22us  cudaFree
+                    0.00%  10.383us        10  1.0380us     826ns  2.5100us  cudaConfigureCall
+                    0.00%  10.249us        20     512ns     196ns  3.8630us  cudaSetupArgument
+                    0.00%  6.0320us         6  1.0050us     454ns  1.8040us  cuDeviceGet
+                    0.00%  4.8390us         3  1.6130us     448ns  3.0640us  cuDeviceGetCount
+
+==3682510== Unified Memory profiling result:
+Device "Tesla K40m (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+      13  318.15KB  4.0000KB  2.0000MB  4.039063MB  712.1600us  Host To Device
+      56  85.714KB  4.0000KB  0.9961MB  4.687500MB  788.7040us  Device To Host
+Total CPU Page faults: 28
+
+
+
+==3682836== NVPROF is profiling process 3682836, command: ./task33
+SUM: 535968646
+MAX: 1023
+MIN: 0
+==3682836== Profiling application: ./task33
+==3682836== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  1.6640ms        10  166.40us  166.18us  167.43us  kernel_full_atomics(int*, int*)
+      API calls:   97.49%  395.54ms         2  197.77ms  370.26us  395.17ms  cudaMallocManaged
+                    0.86%  3.4737ms         3  1.1579ms  1.1530ms  1.1665ms  cuDeviceTotalMem
+                    0.72%  2.9027ms        10  290.27us  151.71us  1.4750ms  cudaLaunch
+                    0.43%  1.7342ms        10  173.42us  157.82us  177.90us  cudaDeviceSynchronize
+                    0.40%  1.6310ms       282  5.7830us     344ns  234.10us  cuDeviceGetAttribute
+                    0.05%  211.22us         1  211.22us  211.22us  211.22us  cudaFree
+                    0.04%  172.02us         3  57.341us  50.443us  65.901us  cuDeviceGetName
+                    0.00%  19.935us        20     996ns     370ns  6.8730us  cudaSetupArgument
+                    0.00%  19.361us        10  1.9360us  1.5400us  4.5210us  cudaConfigureCall
+                    0.00%  5.8580us         6     976ns     491ns  1.8170us  cuDeviceGet
+                    0.00%  4.8190us         3  1.6060us     414ns  3.0510us  cuDeviceGetCount
+
+==3682836== Unified Memory profiling result:
+Device "Tesla K40m (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+      13  318.15KB  4.0000KB  2.0000MB  4.039063MB  714.2400us  Host To Device
+      56  85.714KB  4.0000KB  0.9961MB  4.687500MB  788.0640us  Device To Host
+Total CPU Page faults: 28
